@@ -36,6 +36,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- GithubMaterial dependencies. -->
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+        <repository>
+            <id>jgit-repository</id>
+            <name>Eclipse JGit Repository</name>
+            <url>http://download.eclipse.org/jgit/maven</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>com.thoughtworks.go</groupId>
@@ -94,6 +107,25 @@
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
             <version>1.6.1</version>
+        </dependency>
+
+        <!-- GithubMaterial dependencies -->
+        <dependency>
+            <groupId>com.coravy.hudson.plugins.github</groupId>
+            <artifactId>github</artifactId>
+            <version>1.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>github-api</artifactId>
+            <version>1.42</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jenkins-ci.plugins</groupId>
+            <artifactId>ghprb</artifactId>
+            <version>1.14-5</version>
         </dependency>
 
         <!-- Temporary: Feature toggle "use.new.rails" is related to this. -->
